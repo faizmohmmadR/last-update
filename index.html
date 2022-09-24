@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript">
+        
+        var pics = new Array("photo/pic1.jpg","photo/pic2.jpg","photo/pic3.jpg","photo/pic4.jpg","photo/pic15.jpg","photo/pic6.jpg","photo/pic7.jpg","photo/pic8.jpg");
+        document.getElementById("pic").innerHTML  = "<img src='"+ pics[1] +"'>";
+        function show(id){
+         parts = id.split("_");
+         document.getElementById("pic").innerHTML  = "<img src='"+ pics[parts[1]] +"'>";
+         
+         var name = ["iPhon 13 promax","MaxBookPro","Mac","Iron","Watch","Nike shoe","TOYOTA","Farahry"];
+         var price = ["$1000","$500","$500","$50","$80","$30","$7000","$8000"];
+         var description= ["iPhon 13 promax it has 6GB RAM and 256GB memory and it has 48MP camra",
+                            "MaxBooPro is a very powrfull computer it has 16GB RAM and 1000SSD Hardkisk and also it is good resolation",
+                            "MakBook Pro very power full computer","this is a very good iron it need very lattle power",
+                            "Turkish watch is very nice and gread watch it has a powerfull bottry and you and use it as mobile ",
+                            "nike shoe is very good shoe it has higer cuialtity","powerfull and expensive care it's speed is 600km/h","power full care it is appropriate for wealty peple"];
+         
+         for(var i=0;i<name.length;i++)
+        {
+            document.getElementById("name").innerHTML = name[parts[1]],description[parts[1]];
+            document.getElementById("description").innerHTML = description[parts[1]];  
+            document.getElementById("price").innerHTML = price[parts[1]];
+        }
+
+             window.setInterval(show,1000);
+            }
+        </script>
+
+    <meta name="description" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Electronics, Cars, Fashion</title>
+</head>
+<body >
+<div class="container">
+            <nav class="nav-wrapper wheat">
+                <div class="container"></div>
+                <a href="#" class="brand-logo">Ploranzai</a>
+                <section class="container hide-on-med-and-down"  id="contact">
+                    <div class="row">
+                        <div class="col s12 l5 right" >
+                            <form action="" class="input-field white">
+                                <input  class="search right-text" type="search" id="search" placeholder="Search">
+                                <a href="#" class="btn-small">Search</a>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+         <div class="menu ">
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons left hide-on-large-only" >menu</i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">Saved </a></li>
+                <li><a href="#">Electronics </a></li>
+                <li><a href="#">Fashion </a></li>
+                <li><a href="#">Sports </a></li>                
+                <li><a href="#">Motors </a></li>
+                <li><a href="#">Deals </a></li>
+            </ul>
+         </div>
+
+         <ul class="sidenav" id="mobile-links">
+            <li ><a href="#">Home</a></li>
+            <li> <a href="#">Saved </a></li>
+            <li><a href="#">Electronics </a></li>
+            <li><a href="#">Fashion </a></li>
+            <li><a href="#">Sports </a></li>                
+            <li><a href="#">Motors </a></li>
+            <li><a href="#">Deals </a></li>
+         </ul>
+
+         <div class="Gif">
+            <div id="pic" class="picture">
+
+                <img src="./photo/pic6.jpg" alt="">
+            </div>
+            <div  class="information" >
+               <h5> Name:</h5>
+                <div id="name" class="name"></div>
+              <h5>  Description: </h5>
+                <div id="description" class="description"> </div>
+                <h5>Price:</h5>
+                <div id="price" class="price"></div>
+                <a href="#" class="btn-small ">Sell</a>
+                <a href="#" class="btn-small">Buy</a>
+            
+            </div>
+            <div  class="choice">
+                <script type="text/javascript"> 
+                    for(x in pics){
+                        document.write("<img id='pic_" + x +"'onclick='show(this.id);' src='"+ pics[x] +"'> ")
+                    }
+                </script>
+            </div>
+         </div>
+         <h3 class="center" style="padding-top:30px">Categories</h3>
+         <div class="row" style="background-color: wheat;">
+            <div class="col s12 m6 l6 xl3">
+                <div class="card" >
+                    <div class="card-title center-align orange">Computers</div>
+                    <div class="card-image">
+                        <img src="./photo/pic2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Cars</div>
+                    <div class="card-image">
+                        <img src="./photo/pic7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Motors</div>
+                    <div class="card-image">
+                        <img src="./photo/motor(1).jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Whches</div>
+                    <div class="card-image">
+                        <img src="./photo/pic15.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l5 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Shoes</div>
+                    <div class="card-image">
+                        <img src="./photo/pic6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l5 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Electronics</div>
+                    <div class="card-image">
+                        <img src="./photo/pic5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l5 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Phones</div>
+                    <div class="card-image">
+                        <img src="./photo/pic10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l5 xl3">
+                <div class="card">
+                    <div class="card-title center-align orange">Books</div>
+                    <div class="card-image">
+                        <img src="./photo/book.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+    
+         <!-- Fotor-->
+
+         <footer class="page-footer grey darken-3">
+            <div class="container"> 
+                <div class="row" >
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>About me</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Registration</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Ploranzai Money Back Guarantee</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Bidding & buying help </a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Stories</a></li><li>
+                        </ul>
+                    </div>
+                    <div class="col s6 l2 offset-l2">
+                        <a href="#"><h5 >Sell</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Start Selling</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Learn to sell</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>Stay Connected</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Ploranzai  Blogs</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>Help & Contact</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Seller Information Center</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Contact us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>Community</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Announcements</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Discussion Boards</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Ploranzai Givin Works</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>Tools & apps</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Developers</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Security Center</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Site Map</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>stay Connected</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Ploranzai  Blogs</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                        </ul>
+                     </div>
+    
+                     <div class="col s6 l2 offset-12">
+                        <a href="#"><h5>About Ploranzai</h5></a>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Community info</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">News</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Investors</a></li>
+                                <li><a href="#" class="grey-text text-lighten-3">Government relations</a></li>
+                                    <li><a href="#" class="grey-text text-lighten-3">Advertise with us</a></li>
+                                        <li><a href="#" class="grey-text text-lighten-3">Careers</a></li>
+                                        <li><a href="#" class="grey-text text-lighten-3">Policies</a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        <div class="foorer-copyright grey darken-3">
+            <div class="container center-align"> &copy; 2022 photo</div>
+        </div>
+         </footer>
+
+<!-- Footer------------------------------------------------>
+
+</div>
+</div>
+</div>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
+</body>
+</html>
